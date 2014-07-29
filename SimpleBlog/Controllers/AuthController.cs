@@ -25,6 +25,7 @@ namespace SimpleBlog.Controllers
             {
                 SimpleBlog.Models.User.FakeHash();
             }
+
             if (user == null || !user.CheckPassword(form.Password))
             {
                 ModelState.AddModelError("Username", "Username or password is incorrect.");

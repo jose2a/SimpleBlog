@@ -11,7 +11,7 @@ namespace SimpleBlog.Models
     {
         private const int WorkFactor = 13;
 
-        public static void FakreHash()
+        public static void FakeHash()
         {
             BCrypt.Net.BCrypt.HashPassword("", WorkFactor);
         }
