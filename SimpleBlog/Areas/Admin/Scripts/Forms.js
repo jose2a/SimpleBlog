@@ -14,10 +14,10 @@
         var antiForgeryInput = $("<input type='hidden'>").attr("name", antiForgeryToken.attr("name")).val(antiForgeryToken.val());
 
         $("<form>")
-        .attr("method", "post")
-        .attr("action", $this.attr("href"))
-        .append(antiForgeryInput)
-        .appendTo(document.body)
-        .submit();
+            .attr("method", "post")
+            .attr("action", $this.attr("href"))
+            .append(antiForgeryInput)
+            .appendTo(document.body)
+            .submit();
     });
 });
